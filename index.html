@@ -3,6 +3,12 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script>
+    function cambiarTexto() {
+      var newText = "Este es el nuevo texto que se muestra después de hacer clic en el botón.";
+      document.getElementById("text").innerHTML = newText;
+    }
+  </script>
 </head>
 
 <body>
@@ -10,7 +16,7 @@
   <p>
     Hola, esta es una página web simple que utiliza HTML, CSS y JavaScript de
     los alumnos de la academia BlockMaker.
-  </p> <button id="myButton">Haz clic aquí</button>
+  </p> <button id="myButton" onclick="cambiarTexto()">Haz clic aquí</button>
   <p id="text">
     Este es un texto que cambiará cuando se haga clic en el botón anterior.
   </p>
